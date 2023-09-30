@@ -50,3 +50,9 @@ When creating a campaign you are able to make your own unique entities or bring 
 
 Devs and Dragons UML Link:
   https://www.figma.com/file/Q2QUP9UdENjAe6f4frWzAw/Untitled?type=whiteboard&node-id=0-1&t=AaxlwMI3Nd7G3RoO-0
+
+  ![](https://github.com/JeremyOlds/devs_and_dragons-Developer/blob/main/public/DevsHomePage.png)
+  ![](https://github.com/JeremyOlds/devs_and_dragons-Developer/blob/main/public/DevsCampaignPage.png)
+  ![](https://github.com/JeremyOlds/devs_and_dragons-Developer/blob/main/public/DevsActiveCampaignPage2.png)
+  ![](https://github.com/JeremyOlds/devs_and_dragons-Developer/blob/main/public/DevsActiveCampaignPage1.png)
+  ![](https://github.com/JeremyOlds/devs_and_dragons-Developer/blob/main/public/DevsAccountPage.png)
