@@ -85,6 +85,10 @@
           </div>
         </div>
       </div>
+
+      <div id="my-characters">
+
+      </div>
     </div>
   </div>
 </template>
