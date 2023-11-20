@@ -33,11 +33,17 @@
                         Challenge Rating: {{ monster.challenge_rating }}
                     </div>
 
-                    <div class="line-break mt-3"></div>
-                        <div class="mt-2">
-                            <p class="text-center">{{ monster.desc }}</p>
-                        </div>
-                    <div class="line-break mb-3"></div>
+                    <div v-if="monster.desc">
+                        <div class="line-break mt-3"></div>
+                            <div class="mt-2">
+                                <p class="text-center">{{ monster.desc }}</p>
+                            </div>
+                        <div class="line-break mb-3"></div>
+                    </div>
+
+                    <div v-else>
+                        <div class="line-break mt-3"></div>
+                    </div>
                     
 
                     <div class="mt-2 text-center">
@@ -59,19 +65,19 @@
 
                         <h5 class="text-decoration-underline">Actions</h5>
 
-                        <div>
+                        <div  v-for="actions in monster" :key="actions.name">>
                             <div>
-                                <span class="text-warning">{{ monster.actions[0]?.name }}:</span>
-                                {{ monster.actions[0]?.desc }}
+                                <span class="text-warning">{{actions.name }}:</span>
+                                {{ actions.desc }}
                             </div>
-                            <div class="mt-2">
+                            <!-- <div class="mt-2">
                                 <span class="text-warning">{{ monster.actions[1]?.name }}:</span>
                                 {{ monster.actions[1]?.desc }}
                             </div>
                             <div class="mt-2">
                                 <span class="text-warning">{{ monster.actions[2]?.name }}:</span>
                                 {{ monster.actions[2]?.desc }}
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
