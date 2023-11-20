@@ -1,13 +1,13 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-10 col-11" v-if="monster?.url.includes('monsters')">
+            <div class="col-md-10 col-12" v-if="monster?.url.includes('monsters')">
                 <div>
-                    <div>
-                        {{ monster.size }} <span>{{ monster.type }}</span>
-                    </div>
-                    <div class="mt-2">
-                        Alignment: {{ monster.alignment }}
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            {{ monster.size }} <span>{{ monster.type }}</span>
+                        </div>
+                        <span class="text-warning">XP: {{ monster.xp }}</span>
                     </div>
                     <div class="d-flex justify-content-between mt-2">
                         <div>
@@ -18,16 +18,27 @@
                         </div>
                     </div>
                     
+                    <div class="mt-2">
+                        Alignment: {{ monster.alignment }}
+                    </div>
                     
                     <div class="mt-2">
-                        Speed: {{ monster.speed.walk }}
-                        <span v-if="monster.speed?.swim">swim {{ monster.speed.swim }} </span>
-                        <span v-if="monster.speed?.fly">fly {{ monster.speed.fly }} </span>
-                        <span v-if="monster.speed.burrow">burrow {{ monster.speed.burrow }}</span>
+                        Speed: {{ monster.speed.walk }} walk
+                        <span v-if="monster.speed?.climb"> {{ monster.speed.climb }} climb</span>
+                        <span v-if="monster.speed?.swim"> {{ monster.speed.swim }} swim</span>
+                        <span v-if="monster.speed?.fly"> {{ monster.speed.fly }} fly</span>
+                        <span v-if="monster.speed.burrow"> {{ monster.speed.burrow }} burrow</span>
                     </div>
                     <div class="mt-2">
                         Challenge Rating: {{ monster.challenge_rating }}
                     </div>
+
+                    <div class="line-break mt-3"></div>
+                        <div class="mt-2">
+                            <p class="text-center">{{ monster.desc }}</p>
+                        </div>
+                    <div class="line-break mb-3"></div>
+                    
 
                     <div class="mt-2 text-center">
                             <h5 class="text-decoration-underline">Base Stats</h5>
@@ -42,13 +53,37 @@
                             </div>
                     </div>
 
-                    <div>
-                        <h5>Actions</h5>
+                    <div class="line-break my-3"></div>
+
+                    <div v-if="monster.actions">
+
+                        <h5 class="text-decoration-underline">Actions</h5>
+
                         <div>
-                            <div class="d-flex justify-content-around">
-                                <div>{{ monster.actions[0].name }}</div>
-                                <div>{{ monster.actions[0].desc }}</div>
+                            <div>
+                                <span class="text-warning">{{ monster.actions[0]?.name }}:</span>
+                                {{ monster.actions[0]?.desc }}
                             </div>
+                            <div class="mt-2">
+                                <span class="text-warning">{{ monster.actions[1]?.name }}:</span>
+                                {{ monster.actions[1]?.desc }}
+                            </div>
+                            <div class="mt-2">
+                                <span class="text-warning">{{ monster.actions[2]?.name }}:</span>
+                                {{ monster.actions[2]?.desc }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <h5 class="text-decoration-underline">Abilities</h5>
+                        <div>
+                            <span class="text-success">{{monster.special_abilities[0]?.name}}:</span>
+                            {{ monster.special_abilities[0]?.desc }}
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-success">{{ monster.special_abilities[1]?.name }}:</span>
+                            {{ monster.special_abilities[1]?.desc }}
                         </div>
                     </div>
                     <div>
@@ -78,4 +113,10 @@ export default {
 </script>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.line-break{
+    border-top: 2px solid white;
+    width: 100%;
+    
+}
+</style>
