@@ -87,7 +87,7 @@
       </div>
 
       <div id="my-characters">
-
+        <!-- <CharacterSheet /> -->
       </div>
     </div>
   </div>
