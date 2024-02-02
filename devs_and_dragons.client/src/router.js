@@ -4,6 +4,7 @@ import DescriptionPage from './pages/DescriptionPage.vue'
 import NotesPage from './pages/NotesPage.vue'
 import EntitiesPage from './pages/EntitiesPage.vue'
 import SearchPage from './pages/SearchPage.vue'
+import CharacterPage from './pages/CharacterPage.vue';
 
 function loadPage(page) {
   return () => import(`./pages/${page}.vue`)
@@ -61,6 +62,11 @@ const routes = [
         path: 'search',
         name: 'search',
         component: SearchPage,
+      },
+      {
+        path: 'character',
+        name: 'character',
+        component: CharacterPage,
       }
 
     ]

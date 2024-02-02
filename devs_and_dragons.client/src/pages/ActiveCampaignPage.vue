@@ -128,6 +128,15 @@
             </ul>
           </div>
         </div>
+
+        <!-- NOTE Character Page Routing -->
+
+<div>
+          <router-link :to="{ name: 'character' }">
+            <h1 class="selectable mt-3 text-light">Character</h1>
+          </router-link>
+        </div>
+
         <!-- NOTE Search page routing -->
         <div>
           <router-link :to="{ name: 'search' }">
