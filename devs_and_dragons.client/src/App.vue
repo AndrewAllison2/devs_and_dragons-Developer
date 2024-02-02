@@ -138,7 +138,7 @@ import Navbar from './components/Navbar.vue'
 import ModalComponent from "./components/ModalComponent.vue"
 import CampaignForm from './components/forms/CampaignForm.vue'
 import EntityCreateForm from './components/forms/EntityCreateForm.vue'
-import UpdateAccount from './components/UpdateAccount.vue'
+import UpdateAccount from './components/forms/UpdateAccount.vue'
 import CreateNoteForm from "./components/forms/CreateNoteForm.vue"
 import EditNoteForm from "./components/forms/EditNoteForm.vue"
 import RecapFormComponent from "./components/forms/RecapFormComponent.vue"

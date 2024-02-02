@@ -22,10 +22,10 @@
 
 <script>
 import { computed, ref } from 'vue'
-import { AppState } from '../AppState.js'
-import { accountService } from '../services/AccountService.js'
-import { logger } from '../utils/Logger.js'
-import Pop from '../utils/Pop.js'
+import { AppState } from '../../AppState.js'
+import { accountService } from '../../services/AccountService.js'
+import { logger } from '../../utils/Logger.js'
+import Pop from '../../utils/Pop.js'
 import { Modal } from "bootstrap"
 
 export default {
