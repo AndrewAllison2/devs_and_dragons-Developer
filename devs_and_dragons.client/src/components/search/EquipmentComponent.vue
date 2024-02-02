@@ -47,7 +47,7 @@
 
 <script>
 import { computed } from "vue";
-import { AppState } from "../AppState.js";
+import { AppState } from "../../AppState.js";
 
 export default {
   setup() {

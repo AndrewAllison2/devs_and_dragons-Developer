@@ -143,12 +143,12 @@ import CreateNoteForm from "./components/CreateNoteForm.vue"
 import EditNoteForm from "./components/EditNoteForm.vue"
 import RecapFormComponent from "./components/RecapFormComponent.vue"
 import EntityListComponent from "./components/EntityListComponent.vue"
-import SpellsComponent from './components/SpellsComponent.vue'
-import MonstersComponent from './components/MonstersComponent.vue'
-import EquipmentComponent from "./components/EquipmentComponent.vue"
-import ClassesComponent from './components/ClassesComponent.vue'
-import MagicItemsComponent from "./components/MagicItemsComponent.vue"
-import BackgroundComponent from "./components/BackgroundComponent.vue"
+import SpellsComponent from './components/search/SpellsComponent.vue'
+import MonstersComponent from './components/search/MonstersComponent.vue'
+import EquipmentComponent from "./components/search/EquipmentComponent.vue"
+import ClassesComponent from './components/search/ClassesComponent.vue'
+import MagicItemsComponent from "./components/search/MagicItemsComponent.vue"
+import BackgroundComponent from "./components/search/BackgroundComponent.vue"
 import DiscordForm from "./components/discordForm.vue"
 
 export default {
