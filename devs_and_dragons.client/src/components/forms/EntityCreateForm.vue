@@ -31,11 +31,11 @@
 
 <script>
 import { ref } from 'vue';
-import { entityService } from '../services/EntityService.js';
+import { entityService } from '../../services/EntityService.js';
 import { Modal } from 'bootstrap';
-import Pop from '../utils/Pop.js';
-import { AppState } from '../AppState.js';
-import { router } from '../router.js';
+import Pop from '../../utils/Pop.js';
+import { AppState } from '../../AppState.js';
+import { router } from '../../router.js';
 
 export default {
   setup() {
