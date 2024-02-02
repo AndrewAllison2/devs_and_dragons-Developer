@@ -20,13 +20,13 @@
 
 <script>
 import { ref } from "vue";
-import { logger } from "../utils/Logger.js";
-import Pop from "../utils/Pop.js";
-import { notesService } from "../services/NotesService.js";
+import { logger } from "../../utils/Logger.js";
+import Pop from "../../utils/Pop.js";
+import { notesService } from "../../services/NotesService.js";
 import { useRoute } from "vue-router";
 import { Modal } from "bootstrap";
-import { AppState } from "../AppState.js";
-import { router } from "../router.js";
+import { AppState } from "../../AppState.js";
+import { router } from "../../router.js";
 
 export default {
   setup() {
