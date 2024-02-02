@@ -149,7 +149,7 @@ import EquipmentComponent from "./components/search/EquipmentComponent.vue"
 import ClassesComponent from './components/search/ClassesComponent.vue'
 import MagicItemsComponent from "./components/search/MagicItemsComponent.vue"
 import BackgroundComponent from "./components/search/BackgroundComponent.vue"
-import DiscordForm from "./components/discordForm.vue"
+import DiscordForm from "./components/forms/discordForm.vue"
 
 export default {
   setup() {

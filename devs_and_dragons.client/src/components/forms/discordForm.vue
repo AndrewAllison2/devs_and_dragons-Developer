@@ -9,9 +9,9 @@
 
 <script>
 import { ref } from "vue";
-import Pop from "../utils/Pop.js";
-import { logger } from "../utils/Logger.js";
-import { campaignsService } from "../services/CampaignsService.js";
+import Pop from "../../utils/Pop.js";
+import { logger } from "../../utils/Logger.js";
+import { campaignsService } from "../../services/CampaignsService.js";
 import { Modal } from "bootstrap";
 
 export default {
