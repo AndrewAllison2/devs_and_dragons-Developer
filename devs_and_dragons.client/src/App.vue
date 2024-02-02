@@ -141,7 +141,7 @@ import EntityCreateForm from './components/forms/EntityCreateForm.vue'
 import UpdateAccount from './components/UpdateAccount.vue'
 import CreateNoteForm from "./components/forms/CreateNoteForm.vue"
 import EditNoteForm from "./components/forms/EditNoteForm.vue"
-import RecapFormComponent from "./components/RecapFormComponent.vue"
+import RecapFormComponent from "./components/forms/RecapFormComponent.vue"
 import EntityListComponent from "./components/EntityListComponent.vue"
 import SpellsComponent from './components/search/SpellsComponent.vue'
 import MonstersComponent from './components/search/MonstersComponent.vue'
