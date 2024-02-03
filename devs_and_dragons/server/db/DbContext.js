@@ -15,6 +15,7 @@ class DbContext {
   EntityCampaignLink = mongoose.model('EntityCampaignLink', entityCampaignLinkSchema)
   Notes = mongoose.model('Note', NotesSchema)
   AccountCampaignLink = mongoose.model('AccountCampaignLink', accountCampaignLinkSchema)
+  Characters = mongoose.model('Character', CharacterSchema)
 }
 
 export const dbContext = new DbContext()
