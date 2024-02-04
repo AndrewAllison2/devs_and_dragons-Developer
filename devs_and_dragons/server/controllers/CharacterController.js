@@ -11,6 +11,7 @@ export class CharacterController extends BaseController {
       .get('/:characterId', this.getCharacterbyId)
       .use(Auth0Provider.getAuthorizedUserInfo)
       .post('', this.createCharacter)
+
   }
 
   async createCharacter(req, res, next) {
