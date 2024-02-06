@@ -1,7 +1,7 @@
 {
   "name": "devs_and_dragons",
   "version": "0.1.2",
-  "homepage": "https://devs-and-dragons.onrender.com",
+  "homepage": "https://devs-and-dragons-nu5g.onrender.com/",
   "private": true,
   "scripts": {
     "serve": "vite",
