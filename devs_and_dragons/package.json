@@ -6,6 +6,7 @@
   "scripts": {
     "debug": "node index.js",
     "start": "node index.js",
+    "build": "node build",
     "dev": "node index.js",
     "setup": "npm install"
   },
