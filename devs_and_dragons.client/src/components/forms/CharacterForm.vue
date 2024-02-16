@@ -60,16 +60,34 @@ import Pop from "../../utils/Pop.js";
 import { useRoute } from "vue-router";
 import { Modal } from "bootstrap";
 import { AppState } from "../../AppState.js";
+import { charactersService } from "../../services/CharactersService.js"
 
 export default {
   setup() {
     const editable = ref({})
     const route = useRoute()
+    const data = editable.value
 
     return {
       editable,
       race: ['Human', 'Elf', 'Half-Elf', 'Dwarf', 'Gnome', 'Halfling', 'Tiefling', 'Half-Orc', 'Dragonborn'],
-      characterClass: ['Barbarian', 'Paladin', 'Druid', 'Wizard', 'Fighter', 'Ranger', 'Rogue', 'Bard', 'Sorcerer', 'Warlock', 'Artificer']
+      characterClass: ['Barbarian', 'Paladin', 'Druid', 'Wizard', 'Fighter', 'Ranger', 'Rogue', 'Bard', 'Sorcerer', 'Warlock', 'Artificer'],
+
+// FIXME  FINISH THIS METHOD
+      async createCharcter() {
+        try {
+                  if (!AppState.account.id) {
+            throw new Error('Login required to Create Event')
+          }
+          const character = await charactersService.createCharcter(data)
+        }
+        catch (error) {
+          return Pop.error(error.message)
+        }
+      }
+
+
+
     }
   }
 }

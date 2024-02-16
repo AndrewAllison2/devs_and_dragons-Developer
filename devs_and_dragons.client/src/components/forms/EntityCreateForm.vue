@@ -46,6 +46,7 @@ export default {
     return {
       editable,
       types: ['character', 'location', 'quest', 'magic item', 'equipment', 'npc', 'monster'],
+
       async createEntity() {
         try {
           if (!AppState.account.id) {
