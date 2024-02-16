@@ -131,10 +131,22 @@
 
         <!-- NOTE Character Page Routing -->
 
-<div>
-          <router-link :to="{ name: 'character' }">
-            <h1 class="selectable mt-3 text-light">Character</h1>
+        <div>
+          <div class="d-flex justify-content-around align-items-center fs-4 ">
+            <router-link :to="{ name: 'character' }">
+            <h1 class="selectable " data-bs-toggle="collapse" data-bs-target="#characters">Characters</h1>
           </router-link>
+            <i v-if="hasLink || campaign?.creatorId == account.id" class="mdi mdi-plus-circle selectable"
+              :hidden="campaign?.isArchived == true" title="Add a Player Character" type="button" data-bs-toggle="modal"
+              data-bs-target="#createCharacter"></i>
+          </div>
+
+          <!-- <div id="charcters" class="collapse characters-menu">
+            <ul class="" v-for="c in characters" :key="c?.id">
+            </ul>
+          </div> -->
+
+        </div>
         </div>
 
         <!-- NOTE Search page routing -->
@@ -147,7 +159,6 @@
 
       </div>
     </div>
-  </div>
 </template>
 
 

@@ -37,6 +37,15 @@
     </template>
   </ModalComponent>
 
+  <ModalComponent id="createCharacter">
+    <template #header>
+      Add Character Info
+    </template>
+    <template #body>
+      <CharacterForm />
+    </template>
+  </ModalComponent>
+
 
   <ModalComponent id="createNote">
     <template #header>
@@ -150,6 +159,7 @@ import ClassesComponent from './components/search/ClassesComponent.vue'
 import MagicItemsComponent from "./components/search/MagicItemsComponent.vue"
 import BackgroundComponent from "./components/search/BackgroundComponent.vue"
 import DiscordForm from "./components/forms/discordForm.vue"
+import CharacterForm from "./components/forms/CharacterForm.vue"
 
 export default {
   setup() {
@@ -158,7 +168,7 @@ export default {
       selectedResult: computed(() => AppState.selectedResult)
     }
   },
-  components: { Navbar, ModalComponent, CampaignForm, EntityCreateForm, UpdateAccount, CreateNoteForm, EditNoteForm, RecapFormComponent, EntityListComponent, EquipmentComponent, SpellsComponent, MonstersComponent, ClassesComponent, MagicItemsComponent, BackgroundComponent, DiscordForm }
+  components: { Navbar, ModalComponent, CampaignForm, EntityCreateForm, UpdateAccount, CreateNoteForm, EditNoteForm, RecapFormComponent, EntityListComponent, EquipmentComponent, SpellsComponent, MonstersComponent, ClassesComponent, MagicItemsComponent, BackgroundComponent, DiscordForm, CharacterForm }
 }
 </script>
 <style lang="scss">
