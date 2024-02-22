@@ -81,10 +81,10 @@
           <div id="notes" class="collapse notes-menu">
             <ul class="" v-for="note in notes" :key="note?.id">
               <router-link :to="{ name: 'notes', params: { campaignId: campaign?.id, noteId: note?.id } }">
-                <div class="d-flex justify-content-between ">
+                <div class="d-flex justify-content-between text-secondary">
                   <li v-if="note.isRecap == false" class="selectable">{{ note.name }}</li>
-                  <i v-if="note?.accountId == account?.id && note?.isRecap == false" class="mdi mdi-eye text-success pe-3"
-                    title="Everybody can see this Entity"></i>
+                  <i v-if="note?.accountId == account?.id && note?.isRecap == false" class="mdi mdi-feather text-secondary pe-3"
+                    title="You created this note"></i>
                 </div>
               </router-link>
 
@@ -103,7 +103,7 @@
           <div id="recaps" class="collapse notes-menu">
             <ul v-for="note in notes" :key="note.id">
               <router-link :to="{ name: 'notes', params: { campaignId: campaign?.id, noteId: note?.id } }">
-                <li v-if="note.isRecap == true" class="selectable">{{ note.name }}</li>
+                <li v-if="note.isRecap == true" class="selectable text-secondary">{{ note.name }}</li>
               </router-link>
             </ul>
           </div>
@@ -118,11 +118,12 @@
           <div id="entities" class="collapse notes-menu">
             <ul v-for="entity in entityLinks" :key="entity.id">
               <router-link :to="{ name: 'entities', params: { campaignId: campaign?.id, entityId: entity?.id } }">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between text-secondary">
                   <li v-if="entity?.isPrivate == false || campaign?.creatorId == account?.id" class="selectable">{{
                     entity.Entity.name }}</li>
                   <i v-if="entity.isPrivate == false && campaign?.creatorId == account.id"
                     class="mdi mdi-eye text-success pe-3" title="Everybody can see this Entity"></i>
+                  <!-- <i v-if="entity.isPrivate == true && campaign?.creatorId == account.id" class="mdi mdi-eye-closed text-danger pe-3" title="Everybody can see this Entity"></i> -->
                 </div>
               </router-link>
             </ul>
@@ -131,31 +132,31 @@
 
         <!-- NOTE Character Page Routing -->
 
-        <div>
+        <!-- <div>
           <div class="d-flex justify-content-around align-items-center fs-4 ">
             <router-link :to="{ name: 'character' }">
-            <h1 class="selectable " data-bs-toggle="collapse" data-bs-target="#characters">Characters</h1>
+            <h1 class="selectable text-white" data-bs-toggle="collapse" data-bs-target="#characters">Characters</h1>
           </router-link>
             <i v-if="hasLink || campaign?.creatorId == account.id" class="mdi mdi-plus-circle selectable"
               :hidden="campaign?.isArchived == true" title="Add a Player Character" type="button" data-bs-toggle="modal"
               data-bs-target="#createCharacter"></i>
           </div>
 
-          <!-- <div id="charcters" class="collapse characters-menu">
+           <div id="charcters" class="collapse characters-menu">
             <ul class="" v-for="c in characters" :key="c?.id">
             </ul>
-          </div> -->
+          </div>
 
-        </div>
-        </div>
+        </div> -->
 
         <!-- NOTE Search page routing -->
         <div>
           <router-link :to="{ name: 'search' }">
-            <h1 class="text-light mb-3">Search</h1>
+            <h1 class="text-white mb-3">Search</h1>
           </router-link>
         </div>
 
+      </div>
 
       </div>
     </div>
