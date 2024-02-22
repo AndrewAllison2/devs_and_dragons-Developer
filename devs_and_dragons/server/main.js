@@ -3,7 +3,8 @@ import { createServer } from 'http'
 import { DbConnection } from './db/DbConfig'
 import { socketProvider } from './SocketProvider'
 import { Startup } from './Startup'
-import { logger } from './utils/Logger'
+import { logger } from './utils/Logger';
+import path from "path"
 
 // create server & socketServer
 const app = express()
@@ -31,4 +32,4 @@ httpServer.listen(port, () => {
 
 // const path = require("path");
 
-// app.use(express.static(path.join(__dirname, "/docs")));
+app.use(express.static(path.join(__dirname, "/docs")));
