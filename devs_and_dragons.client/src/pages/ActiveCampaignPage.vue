@@ -50,9 +50,14 @@
     <!-- SECTION (image?), main body, information section -->
     <div class="row">
       <!-- STUB picture/chatbox reservation -->
-      <div class="col-2 order-0">
 
+
+      <div class="col-2 p-0 order-0">
+        <StatsBox />
       </div>
+
+
+
       <!-- STUB child routing section -->
       <div class="col-12 col-md-7 rounded elevation-5 child-field order-2 order-md-1">
         <div>
@@ -133,7 +138,7 @@
 
         <!-- NOTE Character Page Routing -->
 
-        <!-- <div>
+        <div>
           <div class="d-flex justify-content-around align-items-center fs-4 ">
             <router-link :to="{ name: 'character' }">
             <h1 class="selectable text-white" data-bs-toggle="collapse" data-bs-target="#characters">Characters</h1>
@@ -143,12 +148,12 @@
               data-bs-target="#createCharacter"></i>
           </div>
 
-           <div id="charcters" class="collapse characters-menu">
+          <div id="charcters" class="collapse characters-menu">
             <ul class="" v-for="c in characters" :key="c?.id">
             </ul>
           </div>
 
-        </div> -->
+        </div>
 
         <!-- NOTE Search page routing -->
         <div>
@@ -176,6 +181,8 @@ import { notesService } from "../services/NotesService.js"
 import { entitiesCampaignLinkService } from "../services/EntitiesCampaignLinkService.js"
 import { router } from "../router.js";
 import { entityService } from "../services/EntityService.js";
+import StatsBox from '../components/StatsBox.vue'
+
 export default {
   setup() {
 
