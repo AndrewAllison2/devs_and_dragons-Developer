@@ -48,8 +48,8 @@
       </div>
       <div v-if="selectedCategory" class="d-flex justify-content-center pt-2">
         <form @submit.prevent="searchDnDApi()">
-          <label class="" for="dnd-api">Search:</label>
-          <input v-model="filterBy.name" type="search" id="dnd-api" class="rounded">
+          <label class="pe-2" for="dnd-api">Search:</label>
+          <input v-model="filterBy.name" type="search" id="dnd-api" class="rounded p-1" style="width: 21em" placeholder="Hit Search Button to browse all in category">
           <button type="submit" class="btn btn-primary"><i class="mdi mdi-magnify"></i></button>
         </form>
       </div>
