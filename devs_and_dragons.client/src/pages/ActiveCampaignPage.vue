@@ -38,10 +38,11 @@
     <!-- SECTION players -->
 
     <div class="row">
-      <div class="col-12 d-flex justify-content-around p-4">
+      <div class="col-12 d-flex justify-content-around p-4 text-center">
         <div v-for="links in accountLinks" :key="links.id">
           <img class="player-avatar img-fluid" :src="links.Profile?.picture" :alt="links.Profile.name"
             :title="links.Profile.name">
+          <p class="text-white text-bold fs-5 pt-2">{{ links.Profile?.name }}</p>
         </div>
       </div>
     </div>

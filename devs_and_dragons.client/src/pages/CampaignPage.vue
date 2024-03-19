@@ -2,8 +2,8 @@
     <div class="background h-100 container-fluid">
         <div class="row justify-content-center m-0 d-flex ">
             <div class="col-md-4 col-12 m-1 text-center">
-                <div class="elevation-3 rounded fs-5 search text-light p-1 ">
-                    <input v-model="filterBy" class="rounded-pill m-2 w-75 p-1" placeholder="Search Campaigns" type="search"
+                <div class="elevation-3 rounded fs-5 search text-light p-1 mt-2">
+                    <input v-model="filterBy" class="rounded-pill m-2 w-75 p-3 text-center" placeholder="Search Campaigns" type="search"
                         id="site-campaigns" name="q" />
                 </div>
                 <button v-if="account.id" class="btn btn-danger mt-2" type="button" data-bs-toggle="modal"
