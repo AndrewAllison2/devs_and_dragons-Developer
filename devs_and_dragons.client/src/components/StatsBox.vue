@@ -4,7 +4,7 @@
       <div class="col-12 text-black">
 
         <div class="mt-1">
-          <p>Player Name</p>
+          <p>{{account?.name}}</p>
           <h4>Character Name</h4>
         </div>
 
@@ -17,7 +17,10 @@
             <p class="text-bold">Race: <span>Human</span></p>
             <p class="text-bold">AC: <span>10</span></p>
           </div>
-          <p class="text-bold">Class: <span>Wizard</span></p>
+          <div class="d-flex justify-content-between">
+            <p class="text-bold">Class: <span>Wizard</span></p>
+            <p class="text-bold">XP: <span>250</span></p>
+          </div>
         </div>
 
         <h4 class="text-decoration-underline text-center">STATS</h4>
@@ -56,9 +59,17 @@
 
 
 <script>
+import { computed } from "vue";
+import { AppState } from "../AppState.js";
+
+
+
 export default {
+
   setup(){
-    return {}
+    return {
+      account: computed(() => AppState.account)
+    }
   }
 }
 </script>
