@@ -53,7 +53,9 @@
 
 
       <div class="col-2 p-0 order-0">
-        <StatsBox :account="{account}"/>
+        <div>
+          <StatsBox />
+        </div>
       </div>
 
 
