@@ -140,7 +140,7 @@
 
         <!-- NOTE Character Page Routing -->
 
-        <div>
+        <!-- <div>
           <div class="d-flex justify-content-around align-items-center fs-4 ">
             <router-link :to="{ name: 'character' }">
             <h1 class="selectable text-white" data-bs-toggle="collapse" data-bs-target="#characters">Characters</h1>
@@ -155,7 +155,7 @@
             </ul>
           </div>
 
-        </div>
+        </div> -->
 
         <!-- NOTE Search page routing -->
         <div>
