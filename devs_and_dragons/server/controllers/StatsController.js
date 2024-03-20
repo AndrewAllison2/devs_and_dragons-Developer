@@ -14,7 +14,7 @@ export class StatsController extends BaseController {
   async createStats(req, res, next) {
     try {
       const data = req.body
-      data.accountId = req.userInfo.id
+      data.creatorId = req.userInfo.id
       const stats = await statsService.createStats(data)
       return res.send(stats)
     } catch (error) {
