@@ -7,6 +7,7 @@ import { entityCampaignLinkSchema } from "../models/EntityCampaignLinkSchema.js"
 import { NotesSchema } from "../models/NotesSchema.js";
 import { accountCampaignLinkSchema } from "../models/AccountCampaignLinkSchema.js";
 import { CharacterSchema } from "../models/CharacterSchema.js";
+import { StatSchema } from "../models/StatSchema.js";
 
 class DbContext {
   Values = mongoose.model('Value', ValueSchema);
@@ -17,6 +18,7 @@ class DbContext {
   Notes = mongoose.model('Note', NotesSchema)
   AccountCampaignLink = mongoose.model('AccountCampaignLink', accountCampaignLinkSchema)
   Characters = mongoose.model('Character', CharacterSchema)
+  Stats = mongoose.model('Stat', StatSchema)
 }
 
 export const dbContext = new DbContext()

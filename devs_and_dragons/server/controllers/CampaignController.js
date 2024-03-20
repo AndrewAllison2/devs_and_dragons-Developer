@@ -15,6 +15,7 @@ export class CampaignController extends BaseController {
       .get('/:campaignId/notes', this.getNotesByCampaignId)
       .get('/:campaignId/entitycampaignlinks', this.getEntityCampaignLinksByCampaignId)
       .get('/:campaignId/accountcampaignlinks', this.getAccountLinksByCampaignId)
+      .get('/:campaignId/stats', this.getStatsByCampaignId)
 
       .use(Auth0Provider.getAuthorizedUserInfo)
       .post('', this.createCampaign)
@@ -67,6 +68,16 @@ export class CampaignController extends BaseController {
       const campaignId = req.params.campaignId
       const accountLinks = await accountCampaignLinkService.getAccountLinksByCampaignId(campaignId)
       res.send(accountLinks)
+    } catch (error) {
+      next(error)
+    }
+  }
+
+  async getStatsByCampaignId(req, res, next) {
+    try {
+      const campaignId = req.params.campaignId
+      const stats = await statsService.getStatsByCampaignId(campaignId)
+      return res.send(stats)
     } catch (error) {
       next(error)
     }
