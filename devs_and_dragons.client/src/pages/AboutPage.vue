@@ -43,12 +43,16 @@
           </div>
         </div>
         <div class="col-12 col-md-5 card-name m-2 p-2 align-items-center">
-          <div class="mt-4">Andrew Allison</div>
+          <img class="andrew-photo img-fluid" src="src\assets\img\Professional-Photo.jpg" alt="Andrew Allison">
           <div>
-            <a class="mdi mdi-github mx-2 fs-2" title="To Andrew's Github" href="https://github.com/AndrewAllison2"></a>
-            <a class="mdi mdi-linkedin fs-2" title="To Andrew's LinkedIn"
-              href="https://www.linkedin.com/in/andrew-allison-91a213288/"></a>
+            <div class="mt-4">Andrew Allison</div>
+            <div>
+              <a class="mdi mdi-github mx-2 fs-2" title="To Andrew's Github" href="https://github.com/AndrewAllison2"></a>
+              <a class="mdi mdi-linkedin fs-2" title="To Andrew's LinkedIn"
+                href="https://www.linkedin.com/in/andrew-allison-91a213288/"></a>
+            </div>
           </div>
+
         </div>
       </div>
       <div class="row justify-content-center text-light">
@@ -256,6 +260,11 @@ span:nth-child(18) {
   border: 1px double rgba(255, 72, 0, 0.578);
   box-shadow: 4px 5px 13px rgb(255, 72, 0, 0.578);
   background-color: rgb(224, 190, 35);
+}
+
+.andrew-pic {
+  height: 10px;
+  width: 10px;
 }
 
 
