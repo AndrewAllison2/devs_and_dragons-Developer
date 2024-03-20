@@ -4,7 +4,10 @@
       <div class="col-12 text-black">
 
         <div class="mt-1">
-          <p>{{account?.name}}</p>
+          <div class="d-flex justify-content-between">
+            <p>{{account?.name}}</p>
+            <i class="mdi mdi-feather edit-btn selectable"></i>
+          </div>
           <h4>Character Name</h4>
         </div>
 
@@ -78,5 +81,11 @@ export default {
 <style lang="scss" scoped>
 .container {
   background-color: beige;
+}
+.edit-btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 27px;
+  padding: 2px;
 }
 </style>
