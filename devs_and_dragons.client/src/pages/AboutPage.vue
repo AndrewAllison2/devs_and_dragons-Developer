@@ -42,14 +42,18 @@
             <a class="mdi mdi-linkedin fs-2" title="To Devryn's LinkedIn" href=""></a>
           </div>
         </div>
+
         <div class="col-12 col-md-5 card-name m-2 p-2 align-items-center">
-          <img class="andrew-photo img-fluid" src="src\assets\img\Professional-Photo.jpg" alt="Andrew Allison">
-          <div>
-            <div class="mt-4">Andrew Allison</div>
+          <div class="d-flex justify-content-around align-items-center">
+            <img class="andrew-photo img-fluid" src="src\assets\img\Professional-Photo.jpg" alt="Andrew Allison">
             <div>
-              <a class="mdi mdi-github mx-2 fs-2" title="To Andrew's Github" href="https://github.com/AndrewAllison2"></a>
-              <a class="mdi mdi-linkedin fs-2" title="To Andrew's LinkedIn"
-                href="https://www.linkedin.com/in/andrew-allison-91a213288/"></a>
+              <div class="mt-4">Andrew Allison</div>
+              <div>
+                <a class="mdi mdi-application-brackets mx-2 fs-2" title="To Andrew's Portfolio" href="https://andrewallisoncodes.com"></a>
+                <a class="mdi mdi-github mx-2 fs-2" title="To Andrew's Github" href="https://github.com/AndrewAllison2"></a>
+                <a class="mdi mdi-linkedin fs-2" title="To Andrew's LinkedIn"
+                  href="https://www.linkedin.com/in/andrew-allison-91a213288/"></a>
+              </div>
             </div>
           </div>
 
@@ -262,9 +266,11 @@ span:nth-child(18) {
   background-color: rgb(224, 190, 35);
 }
 
-.andrew-pic {
-  height: 10px;
-  width: 10px;
+.andrew-photo {
+  height: 5em;
+  width: 5em;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 
