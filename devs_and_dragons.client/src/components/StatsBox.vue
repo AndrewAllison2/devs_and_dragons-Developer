@@ -6,7 +6,10 @@
         <div class="mt-1">
           <div class="d-flex justify-content-between">
             <p>{{account?.name}}</p>
-            <i class="mdi mdi-feather edit-btn selectable"></i>
+            <i class="mdi mdi-feather edit-btn selectable" title="Edit your character stats" type="button" data-bs-toggle="modal"
+              data-bs-target="#editStats"></i>
+            <i class="mdi mdi-plus edit-btn selectable" title="Edit your character stats" type="button" data-bs-toggle="modal"
+              data-bs-target="#addStats"></i>
           </div>
           <h4>Character Name</h4>
         </div>

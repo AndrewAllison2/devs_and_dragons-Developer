@@ -137,6 +137,11 @@
       <DiscordForm />
     </template>
   </ModalComponent>
+  <ModalComponent id="addStats">
+    <template #body>
+      <AddStatsForm />
+    </template>
+  </ModalComponent>
 </template>
 
 
@@ -160,6 +165,7 @@ import MagicItemsComponent from "./components/search/MagicItemsComponent.vue"
 import BackgroundComponent from "./components/search/BackgroundComponent.vue"
 import DiscordForm from "./components/forms/discordForm.vue"
 import CharacterForm from "./components/forms/CharacterForm.vue"
+import AddStatsForm from "./components/forms/AddStatsForm.vue"
 
 export default {
   setup() {
@@ -168,7 +174,7 @@ export default {
       selectedResult: computed(() => AppState.selectedResult)
     }
   },
-  components: { Navbar, ModalComponent, CampaignForm, EntityCreateForm, UpdateAccount, CreateNoteForm, EditNoteForm, RecapFormComponent, EntityListComponent, EquipmentComponent, SpellsComponent, MonstersComponent, ClassesComponent, MagicItemsComponent, BackgroundComponent, DiscordForm, CharacterForm }
+  components: { Navbar, ModalComponent, CampaignForm, EntityCreateForm, UpdateAccount, CreateNoteForm, EditNoteForm, RecapFormComponent, EntityListComponent, EquipmentComponent, SpellsComponent, MonstersComponent, ClassesComponent, MagicItemsComponent, BackgroundComponent, DiscordForm, CharacterForm, AddStatsForm }
 }
 </script>
 <style lang="scss">
