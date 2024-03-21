@@ -61,7 +61,7 @@
           <h1 class="text-center text-white">You are the DM!!!</h1>
         </div>
 
-        <div v-else>
+        <div v-if="!hasLink && campaign?.creatorId != account.id">
           <h1 class="text-center text-info">You can join this adventure!</h1>
         </div>
       </div>
