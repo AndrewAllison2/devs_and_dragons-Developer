@@ -53,6 +53,7 @@ import Pop from "../../utils/Pop.js";
 import { useRoute } from "vue-router";
 import { Modal } from "bootstrap";
 import { AppState } from "../../AppState.js";
+import {statsService} from '../../services/StatsService.js'
 
 
 export default {
