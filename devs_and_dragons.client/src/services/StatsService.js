@@ -7,6 +7,10 @@ class StatsService {
   async addStats(data) {
     const res = await api.post('api/stats', data)
     logger.log('CREATING STATS', res.data)
+  }
+
+  async getStatsByCampaign(campaignId) {
+    const res = await api.get(`api/camapigns/${campaignId}/stats`)
 
   }
 }

@@ -188,6 +188,7 @@ import { entitiesCampaignLinkService } from "../services/EntitiesCampaignLinkSer
 import { router } from "../router.js";
 import { entityService } from "../services/EntityService.js";
 import StatsBox from '../components/StatsBox.vue'
+import { statsService } from "../services/StatsService.js";
 
 export default {
   setup() {
@@ -242,6 +243,15 @@ export default {
         const campaignId = route.params.campaignId
         logger.log('here is the campaign id on page', campaignId)
         await accountCampaignLinkService.getAccountCampaignLinks(campaignId)
+      } catch (error) {
+        Pop.error(error.message)
+        logger.log(error)
+      }
+    }
+    async function getStatsByCampaign() {
+      try {
+        const campaignId = route.params.campaignId
+        await statsService.getStatsByCampaign(campaignId)
       } catch (error) {
         Pop.error(error.message)
         logger.log(error)
