@@ -53,8 +53,12 @@
 
 
       <div class="col-2 p-0 order-0">
-        <div>
+        <div v-if="hasLink">
           <StatsBox />
+        </div>
+
+        <div v-if="campaign?.creatorId == account.id">
+          <h1 class="text-center text-white">You are the DM!!!</h1>
         </div>
       </div>
 
