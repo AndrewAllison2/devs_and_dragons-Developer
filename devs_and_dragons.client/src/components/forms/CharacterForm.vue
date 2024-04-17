@@ -36,8 +36,6 @@
         <span class="input-group-text">AC:</span>
         <input type="num" class="form-control" aria-label="Enter Character's Armor Class">
       </div>
-
-
     </div>
 
     <button type="submit" class="btn btn-primary" title="Submit">Submit</button>

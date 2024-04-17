@@ -35,8 +35,33 @@
         <span class="input-group-text">AC:</span>
         <input type="num" class="form-control" aria-label="Enter Character's Armor Class">
       </div>
+    </div>
 
-
+    <div class="d-flex">
+      <div class="mb-3 mx-2">
+        <span class="input-group-text">STR:</span>
+        <input type="num" class="form-control" aria-label="Enter Character's Strength Modifier">
+      </div>
+      <div class="mb-3 mx-2">
+        <span class="input-group-text">DEX:</span>
+        <input type="num" class="form-control" aria-label="Enter Character's Strength Modifier">
+      </div>
+      <div class="mb-3 mx-2">
+        <span class="input-group-text">CON:</span>
+        <input type="num" class="form-control" aria-label="Enter Character's Strength Modifier">
+      </div>
+      <div class="mb-3 mx-2">
+        <span class="input-group-text">INT:</span>
+        <input type="num" class="form-control" aria-label="Enter Character's Strength Modifier">
+      </div>
+      <div class="mb-3 mx-2">
+        <span class="input-group-text">WIS:</span>
+        <input type="num" class="form-control" aria-label="Enter Character's Strength Modifier">
+      </div>
+      <div class="mb-3 mx-2">
+        <span class="input-group-text">CHR:</span>
+        <input type="num" class="form-control" aria-label="Enter Character's Strength Modifier">
+      </div>
     </div>
 
     <button type="submit" class="btn btn-primary" title="Submit">Submit</button>
