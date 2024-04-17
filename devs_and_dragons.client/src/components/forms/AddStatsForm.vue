@@ -29,38 +29,38 @@
     <div class="mb-3 d-flex">
       <div class="input-group mb-3 me-3">
         <span class="input-group-text">HP:</span>
-        <input type="num" class="form-control" aria-label="Enter Character's Health Points">
+        <input type="num" class="form-control" v-model="editable.healthPoints" aria-label="Enter Character's Health Points">
       </div>
       <div class="input-group mb-3">
         <span class="input-group-text">AC:</span>
-        <input type="num" class="form-control" aria-label="Enter Character's Armor Class">
+        <input type="num" class="form-control" v-model="editable.armorClass" aria-label="Enter Character's Armor Class">
       </div>
     </div>
 
     <div class="d-flex">
       <div class="mb-3 mx-2">
         <span class="input-group-text">STR:</span>
-        <input type="num" class="form-control" aria-label="Enter Character's Strength Modifier">
+        <input type="num" class="form-control" v-model="editable.strength" aria-label="Enter Character's Strength Modifier">
       </div>
       <div class="mb-3 mx-2">
         <span class="input-group-text">DEX:</span>
-        <input type="num" class="form-control" aria-label="Enter Character's Strength Modifier">
+        <input type="num" class="form-control" v-model="editable.dexterity" aria-label="Enter Character's Strength Modifier">
       </div>
       <div class="mb-3 mx-2">
         <span class="input-group-text">CON:</span>
-        <input type="num" class="form-control" aria-label="Enter Character's Strength Modifier">
+        <input type="num" class="form-control" v-model="editable.constitution" aria-label="Enter Character's Strength Modifier">
       </div>
       <div class="mb-3 mx-2">
         <span class="input-group-text">INT:</span>
-        <input type="num" class="form-control" aria-label="Enter Character's Strength Modifier">
+        <input type="num" class="form-control" v-model="editable.intelligence" aria-label="Enter Character's Strength Modifier">
       </div>
       <div class="mb-3 mx-2">
         <span class="input-group-text">WIS:</span>
-        <input type="num" class="form-control" aria-label="Enter Character's Strength Modifier">
+        <input type="num" class="form-control" v-model="editable.wisdom" aria-label="Enter Character's Strength Modifier">
       </div>
       <div class="mb-3 mx-2">
         <span class="input-group-text">CHR:</span>
-        <input type="num" class="form-control" aria-label="Enter Character's Strength Modifier">
+        <input type="num" class="form-control" v-model="editable.charisma" aria-label="Enter Character's Strength Modifier">
       </div>
     </div>
 
