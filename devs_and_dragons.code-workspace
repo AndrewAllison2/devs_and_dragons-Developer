@@ -2,12 +2,12 @@
 {
   "folders": [
     {
-      "path": "devs_and_dragons.client",
-      "name": "client"
+      "name": "client",
+      "path": "devs_and_dragons.client"
     },
     {
-      "path": "devs_and_dragons",
-      "name": "server"
+      "name": "server",
+      "path": "devs_and_dragons"
     }
   ],
   "settings": {
