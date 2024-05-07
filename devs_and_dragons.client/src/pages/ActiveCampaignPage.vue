@@ -206,6 +206,7 @@ export default {
       getEntityLinksByCampaign()
       getNotesByCampaign()
       entityService.getEntity()
+      getStatsByCampaign()
     })
 
     watchEffect(() => {

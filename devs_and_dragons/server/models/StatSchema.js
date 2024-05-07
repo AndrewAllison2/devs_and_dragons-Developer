@@ -5,7 +5,7 @@ export const StatSchema = new Schema({
   name: { type: String, required: true, minLength: 3, maxLength: 100 },
   coverImg: { type: String, minLength: 3, maxLength: 400, default: "https://www.vecteezy.com/vector-art/550980-user-icon-vector" },
   race: { type: String, enum: ['Human', 'Elf', 'Half-Elf', 'Dwarf', 'Gnome', 'Halfling', 'Tiefling', 'Half-Orc', 'Dragonborn'], required: true },
-  class: { type: String, enum: ['Barbarian', 'Paladin', 'druid', 'wizard', 'fighter', 'ranger', 'rogue', 'bard', 'sorcerer', 'warlock', 'artificer'], required: true },
+  class: { type: String, enum: ['Barbarian', 'Paladin', 'Druid', 'Wizard', 'Fighter', 'Ranger', 'Rogue', 'Bard', 'Sorcerer', 'Warlock', 'Artificer'], required: true },
   level: { type: Number, required: true, default: 1 },
   healthPoints: { type: Number, required: true },
   armorClass: { type: Number, required: true },
