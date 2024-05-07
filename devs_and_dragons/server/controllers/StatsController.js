@@ -6,9 +6,21 @@ export class StatsController extends BaseController {
   constructor() {
     super('api/stats')
     this.router
-      .get()
+      .get('/statId', this.getStatById)
+
       .use(Auth0Provider.getAuthorizedUserInfo)
       .post('', this.createStats)
+  }
+
+  async getStatById(req, resz, next) {
+    try {
+      const statId = req.params.statId
+      const stat = await statsService.getStatsById(statId)
+      resz.send(stat)
+    }
+    catch (error) {
+      next(error)
+    }
   }
 
   async createStats(req, res, next) {
