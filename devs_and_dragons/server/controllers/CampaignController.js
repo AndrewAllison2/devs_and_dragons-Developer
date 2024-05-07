@@ -4,6 +4,7 @@ import { campaignService } from "../services/CampaignService.js";
 import { notesService } from "../services/NotesService.js";
 import { entityCampaignLinkService } from "../services/EntityCampaignLinkService.js";
 import { accountCampaignLinkService } from "../services/AccountCampaignLinkService.js";
+import { statsService } from "../services/StatsService.js";
 
 export class CampaignController extends BaseController {
   constructor() {

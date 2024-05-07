@@ -11,10 +11,10 @@ class StatsService {
     } return stat
   }
 
-  // async getStatsByCampaignId(campaignId) {
-  //   const stats = await dbContext.Stats.find({ campaignId })
-  //   return stats;
-  // }
+  async getStatsByCampaignId(campaignId) {
+    const stats = await dbContext.Stats.find({ campaignId })
+    return stats;
+  }
 
   async createStats(data) {
     const stats = await dbContext.Stats.create(data)
