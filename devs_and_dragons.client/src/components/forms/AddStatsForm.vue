@@ -94,7 +94,7 @@ export default {
 
       async addStats() {
         try {
-          data.campaignId = route.params.camapignId
+          data.campaignId = route.params.campaignId
           data.creatorId = AppState.account.id
           await statsService.addStats(data)
           Modal.getOrCreateInstance('#addStats').hide()
