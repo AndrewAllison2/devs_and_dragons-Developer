@@ -171,7 +171,8 @@ import BackgroundComponent from "./components/search/BackgroundComponent.vue"
 import DiscordForm from "./components/forms/discordForm.vue"
 import CharacterForm from "./components/forms/CharacterForm.vue"
 import AddStatsForm from "./components/forms/AddStatsForm.vue"
-import EditStatsForm from "./components/forms/EditStatsForm.vue"
+
+
 
 export default {
   setup() {

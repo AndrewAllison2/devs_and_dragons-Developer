@@ -7,13 +7,6 @@
     </div>
 
     <div class="mb-3">
-      <label for="type">Character Race</label>
-      <select class="form-control" v-model="editable.race">
-        <option class="text-capitalize" v-for="r in race" :key="r" :value="r">{{ r }}</option>
-      </select>
-    </div>
-
-    <div class="mb-3">
       <label for="type">Character Class</label>
       <select class="form-control" v-model="editable.class">
         <option class="text-capitalize" v-for="c in characterClass" :key="c" :value="c">{{ c }}</option>
@@ -89,19 +82,11 @@ export default {
 
     return {
       editable,
-      race: ['Human', 'Elf', 'Half-Elf', 'Dwarf', 'Gnome', 'Halfling', 'Tiefling', 'Half-Orc', 'Dragonborn'],
+
       characterClass: ['Barbarian', 'Paladin', 'Druid', 'Wizard', 'Fighter', 'Ranger', 'Rogue', 'Bard', 'Sorcerer', 'Warlock', 'Artificer'],
 
       async editStats() {
-        try {
-          data.campaignId = route.params.campaignId
-          data.creatorId = AppState.account.id
-          await statsService.addStats(data)
-          Modal.getOrCreateInstance('#addStats').hide()
-        }
-        catch (error){
-          return Pop.error(error.message)
-        }
+        logger.log("EDITING STATS")
       }
     }
   }
