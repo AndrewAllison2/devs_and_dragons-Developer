@@ -14,7 +14,8 @@ export const StatSchema = new Schema({
   constitution: { type: Number, required: true, },
   intelligence: { type: Number, required: true, },
   wisdom: { type: Number, required: true, },
-  charisma: { type: Number, required: true, }
+  charisma: { type: Number, required: true, },
+  campaignId: { type: Schema.Types.ObjectId, required: true, ref: 'Campaign' }
 }, { timestamps: true, toJSON: { virtuals: true } })
 
 StatSchema.virtual('Creator', {

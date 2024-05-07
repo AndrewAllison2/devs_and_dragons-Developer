@@ -6,7 +6,7 @@ export class StatsController extends BaseController {
   constructor() {
     super('api/stats')
     this.router
-
+      .get()
       .use(Auth0Provider.getAuthorizedUserInfo)
       .post('', this.createStats)
   }
