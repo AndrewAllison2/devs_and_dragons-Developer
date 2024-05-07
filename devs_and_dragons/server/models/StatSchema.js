@@ -10,6 +10,7 @@ export const StatSchema = new Schema({
   level: { type: Number, required: true, default: 1 },
   healthPoints: { type: Number, required: true },
   armorClass: { type: Number, required: true },
+  experiencePoints: { type: Number, required: true, default: 0 },
   strength: { type: Number, required: true, },
   dexterity: { type: Number, required: true, },
   constitution: { type: Number, required: true, },
