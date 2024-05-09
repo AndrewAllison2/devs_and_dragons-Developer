@@ -45,7 +45,7 @@
         </div>
         <div class="d-flex align-content-center">
           <p class="text-bold">CONSTITUTION: </p>
-          <h5 class="ms-2">{{myStats?.constituion}}</h5>
+          <h5 class="ms-2">{{myStats?.constitution}}</h5>
         </div>
         <div class="d-flex align-content-center">
           <p class="text-bold">INTELLIGENCE: </p>
