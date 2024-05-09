@@ -143,6 +143,9 @@
     </template>
   </ModalComponent>
   <ModalComponent id="editStats">
+    <template #header>
+      Edit Stats
+    </template>
     <template #body>
       <EditStatsForm />
     </template>
@@ -171,6 +174,7 @@ import BackgroundComponent from "./components/search/BackgroundComponent.vue"
 import DiscordForm from "./components/forms/discordForm.vue"
 import CharacterForm from "./components/forms/CharacterForm.vue"
 import AddStatsForm from "./components/forms/AddStatsForm.vue"
+import EditStatsForm from "./components/forms/EditStatsForm.vue"
 
 
 
@@ -181,7 +185,7 @@ export default {
       selectedResult: computed(() => AppState.selectedResult)
     }
   },
-  components: { Navbar, ModalComponent, CampaignForm, EntityCreateForm, UpdateAccount, CreateNoteForm, EditNoteForm, RecapFormComponent, EntityListComponent, EquipmentComponent, SpellsComponent, MonstersComponent, ClassesComponent, MagicItemsComponent, BackgroundComponent, DiscordForm, CharacterForm, AddStatsForm }
+  components: { Navbar, ModalComponent, CampaignForm, EntityCreateForm, UpdateAccount, CreateNoteForm, EditNoteForm, RecapFormComponent, EntityListComponent, EquipmentComponent, SpellsComponent, MonstersComponent, ClassesComponent, MagicItemsComponent, BackgroundComponent, DiscordForm, CharacterForm, AddStatsForm, EditStatsForm }
 }
 </script>
 <style lang="scss">

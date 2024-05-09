@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="editStats()">
+  <form @submit.prevent="">
 
     <div class="mb-3">
       <label for="name" class="form-label">Character Name</label>
@@ -67,27 +67,18 @@
 
 import { ref } from "vue";
 import { logger } from "../../utils/Logger.js";
-import Pop from "../../utils/Pop.js";
-import { useRoute } from "vue-router";
-import { Modal } from "bootstrap";
-import { AppState } from "../../AppState.js";
-import {statsService} from '../../services/StatsService.js'
+
 
 
 export default {
   setup() {
     const editable = ref({})
-    const route = useRoute()
-    const data = editable.value
 
     return {
       editable,
 
       characterClass: ['Barbarian', 'Paladin', 'Druid', 'Wizard', 'Fighter', 'Ranger', 'Rogue', 'Bard', 'Sorcerer', 'Warlock', 'Artificer'],
 
-      async editStats() {
-        logger.log("EDITING STATS")
-      }
     }
   }
 }
