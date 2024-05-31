@@ -12,12 +12,13 @@
           <p>• JavaScript</p>
           <p>• HTML</p>
           <p>• CSS</p>
-          <p>• Vue</p>
-          <p>• Git</p>
-          <p>• MongoDB</p>
-          <p>• node.js</p>
           <p>• Bootstrap</p>
+          <p>• Vue</p>
+          <p>• NodeJs</p>
+          <p>• Express</p>
+          <p>• MongoDB</p>
           <p>• Auth0</p>
+          <p>• Git</p>
         </div>
       </div>
     </div>
