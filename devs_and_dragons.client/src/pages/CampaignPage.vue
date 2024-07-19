@@ -12,8 +12,8 @@
             </div>
         </div>
         <div class="row justify-content-center p-1">
-            <div class="col-12 col-md-9 scroll backdrop rounded">
-                <div class="row justify-content-center p-2 ">
+            <div class="col-12 col-md-11 scroll backdrop rounded">
+                <div class="row justify-content-center p-3 ">
                     <div class="col-md-3 col-12 m-2 text-light animate__animated animate__fadeIn camp-card"
                         v-for="campaign in campaigns " :key="campaign.id">
                         <CampaignCardComponent :campaignProp="campaign" />
