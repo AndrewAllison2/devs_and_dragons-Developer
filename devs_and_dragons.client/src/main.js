@@ -1,6 +1,8 @@
 import '@mdi/font/css/materialdesignicons.css'
 import 'bootstrap'
 import { createApp } from "vue"
+import { MotionPlugin } from '@vueuse/motion'
+
 // @ts-ignore
 import App from './App.vue'
 import { registerGlobalComponents } from './registerGlobalComponents'
@@ -12,4 +14,5 @@ registerGlobalComponents(root)
 
 root
   .use(router)
+  .use(MotionPlugin)
   .mount('#app')
