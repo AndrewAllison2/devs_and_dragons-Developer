@@ -1,3 +1,6 @@
+
+<!-- TODO REPLACE KEYFRAME ANIMATION WITH MOTION -->
+
 <template>
   <div class="container-fluid about-page bg-black">
     <div class="row justify-content-around ">
