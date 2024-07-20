@@ -3,7 +3,7 @@
 
     <div class="row demon-img">
       <!-- <img class="demon-img img-fluid" src="https://wallpapercave.com/wp/wp2770331.jpg" alt=""> -->
-      <div class="col-md-6 col-12 home-card text-shadow p-4 mt-5 rounded elevation-3 info-card-top">
+      <div v-motion-fade :duration="5000" class="col-md-6 col-12 home-card text-shadow p-4 mt-5 rounded elevation-3 info-card-top">
         <h4>
           Devs and Dragons gives you the tools to become a superior Dungeon Master. Create and edit epic campaigns,
           seamlessly coordinate your adventure, and have access to shared knowledge across all the campaigns.
