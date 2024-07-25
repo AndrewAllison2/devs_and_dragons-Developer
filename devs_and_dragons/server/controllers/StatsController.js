@@ -12,7 +12,7 @@ export class StatsController extends BaseController {
       .post('', this.createStats)
   }
 
-  async getStatById(req, resz, next) {
+  async getStatById(req, res, next) {
     try {
       const statId = req.params.statId
       const stat = await statsService.getStatsById(statId)
