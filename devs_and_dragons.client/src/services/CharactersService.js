@@ -8,6 +8,7 @@ class CharactersService {
     logger.log(data)
     const res = await api.post('api/characters', data)
     logger.log("CREATING CHARACTER", res.data)
+
   }
 
 }
