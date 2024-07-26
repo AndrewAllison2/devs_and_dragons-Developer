@@ -14,9 +14,8 @@ class StatsService {
   }
 
   async getStatsByCampaign(campaignId) {
-    logger.log('Get stats check 2')
     const res = await api.get(`api/campaigns/${campaignId}/stats`)
-    AppState.Stats.push(new Stat(res.data))
+    AppState.Stats = res.data.map(stat => new Stat(stat))
 
   }
 }

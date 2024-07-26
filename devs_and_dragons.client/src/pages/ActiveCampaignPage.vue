@@ -256,7 +256,6 @@ export default {
     async function getStatsByCampaign() {
       try {
         const campaignId = route.params.campaignId
-        logger.log('Get stats check 1')
         const currentCampStats = await statsService.getStatsByCampaign(campaignId)
         logger.log("HERE ARE THE CURRENT STATS FOR THIS CAMPAIGN:", currentCampStats)
       } catch (error) {
