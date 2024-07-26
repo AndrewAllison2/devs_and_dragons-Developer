@@ -257,7 +257,8 @@ export default {
       try {
         const campaignId = route.params.campaignId
         logger.log('Get stats check 1')
-        await statsService.getStatsByCampaign(campaignId)
+        const currentCampStats = await statsService.getStatsByCampaign(campaignId)
+        logger.log("HERE ARE THE CURRENT STATS FOR THIS CAMPAIGN:", currentCampStats)
       } catch (error) {
         Pop.error(error.message)
         logger.log(error)
