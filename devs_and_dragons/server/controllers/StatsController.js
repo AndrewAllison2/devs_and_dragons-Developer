@@ -16,7 +16,7 @@ export class StatsController extends BaseController {
     try {
       const statId = req.params.statId
       const stat = await statsService.getStatsById(statId)
-      resz.send(stat)
+      res.send(stat)
     }
     catch (error) {
       next(error)
