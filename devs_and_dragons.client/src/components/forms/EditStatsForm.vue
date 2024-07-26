@@ -67,6 +67,8 @@
 
 import { ref } from "vue";
 import { logger } from "../../utils/Logger.js";
+import Pop from '../../utils/Pop.js'
+import { statsService } from "../../services/StatsService.js";
 
 
 
@@ -79,7 +81,18 @@ export default {
 
       characterClass: ['Barbarian', 'Paladin', 'Druid', 'Wizard', 'Fighter', 'Ranger', 'Rogue', 'Bard', 'Sorcerer', 'Warlock', 'Artificer'],
 
+      async editStats() {
+        try {
+          const statsData = editable.value
+          await statsService.editStats(statsData)
+          }
+        catch (error)
+        {
+          return Pop.error(error.message)
+        }
+      }
     }
+
   }
 }
 </script>
