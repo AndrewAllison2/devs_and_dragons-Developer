@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="addStats()">
 
-    <div class="mb-3">
+    <div class="mb-2">
       <label for="name" class="form-label">Character Name</label>
       <input v-model="editable.name" type="text" class="form-control" id="name" minlength="1" maxlength="35" required>
     </div>
