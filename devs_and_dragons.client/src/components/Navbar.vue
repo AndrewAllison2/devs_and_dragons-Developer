@@ -4,7 +4,7 @@
       <div class="d-flex flex-column align-items-center m-2">
 
         <img class="p-1" alt="logo"
-          src="https://www.pngkey.com/png/full/141-1413460_en-world-rpg-news-reviews-d-d-logo.png" height="60" />
+          src="../assets/img/DND_Logo.png" height="60" />
       </div>
     </router-link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
