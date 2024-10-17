@@ -24,6 +24,8 @@ class StatsService {
     const activeStat = AppState.Stats.filter(s => s.creatorId == AppState.account.id)
     logger.log('ACTIVE_STAT', activeStat)
   }
+
+  async editStats()
 }
 
 export const statsService = new StatsService();

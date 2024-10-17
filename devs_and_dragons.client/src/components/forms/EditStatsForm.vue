@@ -92,6 +92,7 @@ export default {
       async editStats() {
         try {
           const statsData = editable.value
+          const statId = AppState
           await statsService.editStats(statsData)
           }
         catch (error)
