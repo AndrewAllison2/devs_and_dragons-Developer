@@ -25,18 +25,20 @@ export const AppState = reactive({
   entityLinks: [],
   /** @type {import('./models/EntityCampaignLink.js').EntityCampaignLink | null} */
   ActiveEntityLink: null,
-  /** @type {import('./models/AccountLinks.js').AccountLinks[]} */
+  /** @type {import('./models/AccountLink.js').AccountLinks[]} */
   AccountLinks: [],
-  /** @type {import('./models/Notes.js').Notes[]} */
+  /** @type {import('./models/Note.js').Note[]} */
   Notes: [],
-  /** @type {import('./models/Notes.js').Notes | null} */
+  /** @type {import('./models/Stat.js').Stat | null} */
   Stats: [],
-  /** @type {import('./models/Stats.js').Stats | null} */
+  /** @type {import('./models/Note.js').Note | null} */
   activeNote: null,
 
   dndApiResults: [],
   selectedResult: null,
 
-  messages: []
+  messages: [],
+
+  activeStat: null
 
 })

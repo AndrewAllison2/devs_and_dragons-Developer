@@ -65,16 +65,24 @@
 
 <script>
 
-import { ref } from "vue";
+import { ref, watchEffect } from "vue";
 import { logger } from "../../utils/Logger.js";
 import Pop from '../../utils/Pop.js'
 import { statsService } from "../../services/StatsService.js";
+import { AppState } from "../../AppState.js";
 
 
 
 export default {
   setup() {
     const editable = ref({})
+
+    watchEffect(() => {
+      if (AppState.activeStat) {
+        const brokenRefStat = { ...AppState.activeStat }
+        editable.value = brokenRefStat
+      }
+    })
 
     return {
       editable,

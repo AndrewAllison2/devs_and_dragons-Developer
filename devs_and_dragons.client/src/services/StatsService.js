@@ -11,11 +11,18 @@ class StatsService {
     logger.log('CREATING STATS', res.data)
     const newStat = new Stat(res.data)
     AppState.Stats.push(newStat)
+    AppState.activeStat = newStat
+
   }
 
   async getStatsByCampaign(campaignId) {
     const res = await api.get(`api/campaigns/${campaignId}/stats`)
     AppState.Stats = res.data.map(stat => new Stat(stat))
+  }
+
+  setActiveStats() {
+    const activeStat = AppState.Stats.filter(s => s.creatorId == AppState.account.id)
+    logger.log('ACTIVE_STAT', activeStat)
   }
 }
 
