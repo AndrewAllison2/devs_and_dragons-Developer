@@ -150,6 +150,14 @@
       <EditStatsForm />
     </template>
   </ModalComponent>
+  <ModalComponent id="entityOptions">
+    <template #header>
+      Edit Stats
+    </template>
+    <template #body>
+      <EntityOptionsComponent />
+    </template>
+  </ModalComponent>
 </template>
 
 
@@ -175,6 +183,7 @@ import DiscordForm from "./components/forms/discordForm.vue"
 import CharacterForm from "./components/forms/CharacterForm.vue"
 import AddStatsForm from "./components/forms/AddStatsForm.vue"
 import EditStatsForm from "./components/forms/EditStatsForm.vue"
+import EntityOptionsComponent from "./components/EntityOptionsComponent.vue"
 
 
 

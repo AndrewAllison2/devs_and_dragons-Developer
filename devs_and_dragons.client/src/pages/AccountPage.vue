@@ -61,8 +61,9 @@
             <div class="carousel-inner">
               <div class="carousel-item d-flex justify-content-center " :class="{ active: index == 0 }"
                 v-for="entity, index in myEntities" :key="entity.id">
-                <div class=" col-8 col-md-6 d-flex flex-column text-white text-center box rounded elevation-5 m-3 p-2">
-                  <div class="elevation-5 mb-3 info-card rounded">
+                <div class=" col-8 col-md-6 d-flex flex-column text-white text-center selectable box rounded elevation-5 m-3 p-2" data-bs-toggle="modal"
+                data-bs-target="#createEntityModal" title="Options">
+                  <div class="elevation-5 mb-3 info-card  rounded">
                     <h3>{{ entity.name }}</h3>
                     <p>Type: {{ entity.type }}</p>
                     <p >{{ entity.desc }}</p>
