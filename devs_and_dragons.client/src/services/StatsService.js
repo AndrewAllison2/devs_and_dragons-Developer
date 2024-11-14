@@ -25,7 +25,9 @@ class StatsService {
     logger.log('ACTIVE_STAT', activeStat)
   }
 
-  async editStats()
+  async editStats() {
+
+  }
 }
 
 export const statsService = new StatsService();
