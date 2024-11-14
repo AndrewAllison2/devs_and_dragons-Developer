@@ -152,7 +152,7 @@
   </ModalComponent>
   <ModalComponent id="entityOptions">
     <template #header>
-      Edit Stats
+      <h1>Options</h1>
     </template>
     <template #body>
       <EntityOptionsComponent />
